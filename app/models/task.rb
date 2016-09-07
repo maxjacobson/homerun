@@ -83,13 +83,4 @@ class Task < ActiveRecord::Base
     end
     super(val)
   end
-
-  def complete!
-    self.update(complete: true)
-  end
-
-  def uncomplete!
-    self.update(complete: false)
-  end
-
 end
